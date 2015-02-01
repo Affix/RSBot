@@ -20,7 +20,9 @@ import org.powerbot.script.PaintListener;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 @Script.Manifest(name="Choppa", description="Powerchops Normal Trees then Drops the Logs")
 
