@@ -2,9 +2,8 @@ RSBot Scripts
 -------------
 
 
-RS3: Choppa
+RS3 Scripts
 -----------
 
-A Simple Powerchopper for powerchopping Normal Logs in any Location!
+Choppa : A Simple Powerchopper for powerchopping Normal Logs in any Location!
 
-<img src="http://i.imgur.com/ioWHTCs.png">
