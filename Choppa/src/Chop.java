@@ -1,3 +1,14 @@
+/**
+ * Title : Choppa
+ * Author : Keiran "Affix" Smith
+ * License : GNU/GPLv3
+ * Copyright : Keiran Smith
+ *
+ * Description : Choppa is a simple Powerbot Script to Chop and Drop Normal Logs.
+ * This is a basic script written as an example.
+ */
+
+package Choppa;
 import org.powerbot.script.rt6.GameObject;
 import org.powerbot.script.rt6.ClientContext;
 import java.util.ArrayList;
@@ -6,7 +17,7 @@ import java.util.List;
 
 public class Chop extends Task<ClientContext> {
 
-    private int TreeIds[] = {38785, 1286, 38783, 38732, 38731};
+    private int TreeIds[] = {38785, 1286, 38783, 38732};
 
     public Chop(ClientContext ctx)
     {

@@ -8,6 +8,9 @@
  * This is a basic script written as an example.
  */
 
+package Choppa;
+
+
 import org.powerbot.script.PollingScript;
 import org.powerbot.script.Script;
 import org.powerbot.script.rt6.ClientContext;
