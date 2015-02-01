@@ -17,7 +17,7 @@ import java.util.List;
 
 public class Chop extends Task<ClientContext> {
 
-    private int TreeIds[] = {38785, 1286, 38783, 38732};
+    private int TreeIds[] = {38785, 1286, 38783};
 
     public Chop(ClientContext ctx)
     {
