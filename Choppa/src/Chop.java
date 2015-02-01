@@ -9,11 +9,9 @@
  */
 
 package Choppa;
+
 import org.powerbot.script.rt6.GameObject;
 import org.powerbot.script.rt6.ClientContext;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class Chop extends Task<ClientContext> {
 
