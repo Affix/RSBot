@@ -31,7 +31,6 @@ public class Choppa extends PollingScript<ClientContext> implements MessageListe
 
     private List<Task> taskList = new ArrayList<Task>();
     private int numLogs = 0;
-    private int burnedLogs = 0;
 
     public static long startTime;
 
