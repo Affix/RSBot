@@ -1,5 +1,5 @@
 /**
- * Title : Choppa
+ * Title : Flaxinator
  * Author : Keiran "Affix" Smith
  * License : GNU/GPLv3
  * Copyright : Keiran Smith
@@ -12,11 +12,11 @@ package Flaxinator;
 import org.powerbot.script.rt6.GameObject;
 import org.powerbot.script.rt6.ClientContext;
 
-public class Pick extends Task<ClientContext> {
+public class PickFlax extends Task<ClientContext> {
 
     private int FlaxID[] = {2646};
 
-    public Pick(ClientContext ctx)
+    public PickFlax(ClientContext ctx)
     {
         super (ctx);
     }

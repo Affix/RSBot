@@ -1,5 +1,5 @@
 /**
- * Title : Choppa
+ * Title : Flaxinator
  * Author : Keiran "Affix" Smith
  * License : GNU/GPLv3
  * Copyright : Keiran Smith
@@ -15,13 +15,13 @@ import org.powerbot.script.Tile;
 import org.powerbot.script.rt6.ClientContext;
 import org.powerbot.script.rt6.GameObject;
 
-public class OpenBank extends Task<ClientContext> {
+public class BankOpener extends Task<ClientContext> {
 
     Area bankArea = new Area(new Tile(2730, 3495, 0),new Tile(2721, 3491, 0));
     Area upstairsBank = new Area(new Tile(2729, 34940, 1), new Tile(2726, 3490,1));
     int bankBoothID = 25808;
 
-    public OpenBank(ClientContext ctx){
+    public BankOpener(ClientContext ctx){
 
         super(ctx);
 

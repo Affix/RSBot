@@ -17,6 +17,8 @@ import org.powerbot.script.Condition;
 import org.powerbot.script.Random;
 import org.powerbot.script.Tile;
 
+
+
 public class WalkToBank extends Task<ClientContext> {
 
     Tile[] toBankTile = new Tile[]{new Tile(2732, 3443, 0), new Tile(2731, 3449, 0), new Tile(2730, 3455, 0), new Tile(2727, 3461, 0), new Tile(2728, 3467, 0), new Tile(2728, 3474, 0), new Tile(2728, 3481, 0), new Tile(2726, 3486, 0), new Tile(2726, 3493, 0)};

@@ -35,9 +35,9 @@ public class Flaxinator extends PollingScript<ClientContext> implements MessageL
     public void start() {
         taskList.addAll(Arrays.asList(new WalkToBank(ctx),
                                         new FlaxField(ctx),
-                                        new OpenBank(ctx),
-                                        new Deposit(ctx),
-                                        new Pick(ctx),
+                                        new BankOpener(ctx),
+                                        new DepositFlax(ctx),
+                                        new PickFlax(ctx),
                                         new ExitBank(ctx)));
 
         startTime = System.currentTimeMillis();
