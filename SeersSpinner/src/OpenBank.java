@@ -1,13 +1,13 @@
 /**
- * Title : Choppa
+ * Title : SeersSpinner
  * Author : Keiran "Affix" Smith
  * License : GNU/GPLv3
  * Copyright : Keiran Smith
  *
- * Description : Flaxinator is an Auto Flax Picker and Bow Stringer
+ * Description : Seers Spinner, Spin Flax in Seers Village
  */
 
-package Flaxinator;
+package SeersSpinner;
 
 import org.powerbot.script.Area;
 import org.powerbot.script.Condition;
@@ -20,6 +20,7 @@ public class OpenBank extends Task<ClientContext> {
     Area bankArea = new Area(new Tile(2730, 3495, 0),new Tile(2721, 3491, 0));
     Area upstairsBank = new Area(new Tile(2729, 34940, 1), new Tile(2726, 3490,1));
     int bankBoothID = 25808;
+    int bowstringID = 1777;
 
     public OpenBank(ClientContext ctx){
 
@@ -30,7 +31,7 @@ public class OpenBank extends Task<ClientContext> {
     @Override
     public boolean activate(){
 
-        return ctx.backpack.select().count()==28
+        return ctx.backpack.select().id(bowstringID).count()==28
                 && !ctx.objects.select().id(bankBoothID).isEmpty()
                 && ctx.bank.opened()==false;
 

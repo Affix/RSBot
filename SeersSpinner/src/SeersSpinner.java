@@ -1,13 +1,13 @@
 /**
- * Title : Choppa
+ * Title : SeersSpinner
  * Author : Keiran "Affix" Smith
  * License : GNU/GPLv3
  * Copyright : Keiran Smith
  *
- * Description : Flaxinator is an Auto Flax Picker and Bow Stringer
+ * Description : Seers Spinner, Spin Flax in Seers Village
  */
 
-package Flaxinator;
+package SeersSpinner;
 
 import org.powerbot.script.PollingScript;
 import org.powerbot.script.Script;
@@ -23,9 +23,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@Script.Manifest(name="Flaxinator", description="Picks Flax, Spins and Banks in seers village")
+@Script.Manifest(name="SeersSpinner", description="Spins Flax in Seers Village")
 
-public class Flaxinator extends PollingScript<ClientContext> implements MessageListener, PaintListener {
+public class SeersSpinner extends PollingScript<ClientContext> implements MessageListener, PaintListener {
 
     private List<Task> taskList = new ArrayList<Task>();
     private int numFlax = 0;
@@ -34,10 +34,11 @@ public class Flaxinator extends PollingScript<ClientContext> implements MessageL
     @Override
     public void start() {
         taskList.addAll(Arrays.asList(new WalkToBank(ctx),
-                                        new FlaxField(ctx),
-                                        new BankOpener(ctx),
-                                        new DepositFlax(ctx),
-                                        new PickFlax(ctx),
+                                        new OpenBank(ctx),
+                                        new Deposit(ctx),
+                                        new Withdraw(ctx),
+                                        new WalkToSpinner(ctx),
+                                        new Spin(ctx),
                                         new ExitBank(ctx)));
 
         startTime = System.currentTimeMillis();
@@ -73,12 +74,12 @@ public class Flaxinator extends PollingScript<ClientContext> implements MessageL
         g.drawRect(8, 25, 151, 93);
 
         g.setColor(Color.WHITE);
-        g.drawString("Flaxinator!", 12, 41);
+        g.drawString("SeersSpinner", 12, 41);
 
         g.setColor(Color.WHITE);
 
-        g.drawString("Flax Picked: " + numFlax, 12, 66);
-        g.drawString("Flax/Hour: " + perHour(numFlax), 12, 82);
+        g.drawString("Flax Spun: " + numFlax, 12, 66);
+        g.drawString("Strings/Hour: " + perHour(numFlax), 12, 82);
         g.drawString("Runtime: " + runTime(startTime), 12, 98);
 
         int mX = ctx.input.getLocation().x;
