@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-RSBot Scripts
--------------
-
-
 RS3 Scripts
 -----------
 
